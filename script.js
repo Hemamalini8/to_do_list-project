@@ -1,7 +1,7 @@
 var input = document.getElementById("input");
 var age = document.getElementById("age");
 var email = document.getElementById("email");
-var password = document.getElementById("possword");
+var password = document.getElementById("pw");
 var course = document.getElementById("course");
 var btn = document.getElementById("btn");
 var container = document.getElementById("container");
@@ -28,12 +28,13 @@ btn.addEventListener("click", function () {
     alert("Password must be at least 6 characters long!");
     return;
   }
+  var m = "*".repeat(password.value.length);
   var tr = document.createElement("tr");
   tr.innerHTML =
     "<td class='border border-gray-400 p-2'>" + input.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + age.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + email.value + "</td>" +
-    "<td class='border border-gray-400 p-2'>" + "*".repeat(password.value.length) + "</td>" +
+    "<td class='border border-gray-400 p-2'>" + m+ "</td>" +
     "<td class='border border-gray-400 p-2'>" + selectedGender.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + course.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" +
