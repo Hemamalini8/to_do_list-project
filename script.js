@@ -33,7 +33,7 @@ btn.addEventListener("click", function () {
     "<td class='border border-gray-400 p-2'>" + input.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + age.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + email.value + "</td>" +
-    "<td class='border border-gray-400 p-2'>" + password.value + "</td>" +
+    "<td class='border border-gray-400 p-2'>" + "*".repeat(password.value.length) + "</td>" +
     "<td class='border border-gray-400 p-2'>" + selectedGender.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" + course.value + "</td>" +
     "<td class='border border-gray-400 p-2'>" +
